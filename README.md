@@ -13,4 +13,4 @@ Students will be expected to experiment with multiple AIs in this course, but we
 2. Perplexity is a Large Language Model (LLM) AI that does not just answer questions based on training data, but is a LLM that interprets your query, searches the web, and then attempts to interpret the results. This model has many advantages from the perspective of web literacy.
    * You see how it is processing your query
    * You are provided citations and the ability to paste them in a Markdown document.
-3. But probably most of all, **Perplexity is Perplexing**. It is a fantastic tool to have a dialogue with, but like any AI, it is just an AI. And if you think about it, trying to search a web full of misinformation is well, **perplexing**.
+3. But probably most of all, **Perplexity is Perplexing**. It is a fantastic tool to have a dialogue with, but like any AI, it is just an AI. And if you think about it, trying to search a web full of misinformation is well, perplexing.
