@@ -1,5 +1,6 @@
 # This site is under development
 This site will contain files for the Spring 2025 Python for Science class. 
+$$Please Note: The first Lesson is a Jupyter Notebook on Installing Jupyter Lab. You can not run it without having Jupyter installed, so I create an HTML Version here: [https://rebelford.github.io/IOCT-TECH/01_aSetUpComputer%20.html](https://rebelford.github.io/IOCT-TECH/01_aSetUpComputer%20.html)
 
 If you have any questions or concerns please contact [Bob Belford](mailto:rebelford@ualr.edu).
 
