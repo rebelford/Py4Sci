@@ -1,0 +1,5 @@
+Date: 2025-02-14
+Chemical: Hydrochloric Acid (HCl)
+Incident: Minor exposure on gloves. No injury.
+Preventive Action: Double-check gloves for leaks before use.
+
