@@ -15,12 +15,13 @@ Students will be expected to experiment with multiple AIs in this course, and ar
 3. Module2-OOPDataStructures - This Module is an introduction to Python Object Oriented Programming and Data Structures. In addition to built-in volatile data structures we cover persistent data structures that reside outside of the python program.
 4. Search_Utility - This directory contains a search utility program you can download to your computer and search all the jupyter notebooks in your home directory, or a specified subdirectory of your home directory.
 
-## File Path Hierarchy on my PC
+## Directory Hierarchy on local PC
 Organizing your files is very important and as you run the modules you should maintain an appropriate directory structure.  Many of the scripts in the modules will create embedded subdirectories within your home directory  and it is important you understand how to navigate this. I am going to share part of the directory hierarchy I have created, both manually and automagically, and how I use the search utility and AI programs like Perplexity and ChatGPT. 
 
 
 ```/home/user/
     └── minconda3/
+        └── envs/
     └── projects/
     │   └── py4sci(.git repo)/
     │   └── other_project(.git repo)/
@@ -33,3 +34,11 @@ Organizing your files is very important and as you run the modules you should ma
 
 
 ```
+### Local Directory Descriptions
+- minconda3/ - Created when installed miniconda, the envs folders are generated every time a virtual environment created
+- projects/ - Manually Created - each conda environment needs a project folder to organize the python files and jupyter notebooks that need the packages of that environment. The files in this folder can be git repositories, and this is where your class folder should be cloned.
+- sandbox/ - Automagically created by scripts, this is where we will keep files we use as we play around and experiment.  This should not be a git repo as you do not want to sync this with github, this is your "sandbox"
+- data/ - Automagically created by scripts (with subdirectories) and this is where we will keep data files associated with assignments, that is, real data, and so it needs to be structured so you can find it when you need it.
+- search_results/ Auotmagically created the first time you run the search-utility program.  You should move that program to this folder after it is created. Everytime you run a search an html file will be generated with a name like search_search-term.html, so if I searched for csv it would be called serch_csv.html.  When you open this in the Jupyter Lab an html page will open with links to different notebooks, followed by a list of all headers that contain that link.  You can not open the notebook in the current notebook, but have to open in new tab or new window.  What I do is open a bunch in different tabs, and then browse through them to find what I need, allowing me to quickly look through all my notebooks that have a topic I am working on.
+- ai_books - When I engaged an AI on a topic I copy the results into a markdown cell.  These are already formatted to generate headers that can be found by the search utility.  I will often design new headers to allow me to find topics by search terms, and I will also create small code cells that demonstrate coding concepts.
+
