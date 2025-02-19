@@ -35,10 +35,60 @@ Organizing your files is very important and as you run the modules you should ma
 
 ```
 ### Local Directory Descriptions
-- minconda3/ - Created when installed miniconda, the envs folders are generated every time a virtual environment created
-- projects/ - Manually Created - each conda environment needs a project folder to organize the python files and jupyter notebooks that need the packages of that environment. The files in this folder can be git repositories, and this is where your class folder should be cloned.
-- sandbox/ - Automagically created by scripts, this is where we will keep files we use as we play around and experiment.  This should not be a git repo as you do not want to sync this with github, this is your "sandbox"
-- data/ - Automagically created by scripts (with subdirectories) and this is where we will keep data files associated with assignments, that is, real data, and so it needs to be structured so you can find it when you need it.
-- search_results/ Auotmagically created the first time you run the search-utility program.  You should move that program to this folder after it is created. Everytime you run a search an html file will be generated with a name like search_search-term.html, so if I searched for csv it would be called serch_csv.html.  When you open this in the Jupyter Lab an html page will open with links to different notebooks, followed by a list of all headers that contain that link.  You can not open the notebook in the current notebook, but have to open in new tab or new window.  What I do is open a bunch in different tabs, and then browse through them to find what I need, allowing me to quickly look through all my notebooks that have a topic I am working on.
-- ai_books - When I engaged an AI on a topic I copy the results into a markdown cell.  These are already formatted to generate headers that can be found by the search utility.  I will often design new headers to allow me to find topics by search terms, and I will also create small code cells that demonstrate coding concepts.
+- **minconda3/** - Created when installed miniconda, the envs folders are generated every time a virtual environment created
+- **projects/** - Manually Created - each conda environment needs a project folder to organize the python files and jupyter notebooks that need the packages of that environment. The files in this folder can be git repositories, and this is where your class folder should be cloned.
+- **sandbox/** - Automagically created by scripts, this is where we will keep files we use as we play around and experiment.  This should not be a git repo as you do not want to sync this with github, this is your "sandbox"
+- **data/** - Automagically created by scripts (with subdirectories) and this is where we will keep data files associated with assignments, that is, real data, and so it needs to be structured so you can find it when you need it. This should not be in a git repo that you push from, unless you want to upload all that data to github, which is probably not wise.
+- **search_results/** Auotmagically created the first time you run the search-utility program.  You should move that program to this folder after it is created. Everytime you run a search an html file will be generated with a name like search_search-term.html, so if I searched for csv it would be called serch_csv.html.  When you open this in the Jupyter Lab an html page will open with links to different notebooks, followed by a list of all headers that contain that link.  You can not open the notebook in the current notebook, but have to open in new tab or new window.  What I do is open a bunch in different tabs, and then browse through them to find what I need, allowing me to quickly look through all my notebooks that have a topic I am working on. This should not be a git repo as you are searching your own work space.
+- **ai_books/** - When I engaged an AI on a search topic I copy the results into a markdown cell.  These are already formatted to generate headers that can be found by the search utility.  I will often design new headers to allow me to find topics by search terms, and I will also create small code cells that demonstrate coding concepts. I would not make this a git repo, as this is more like a collection of my private note resulting from my interactions with AIs.
+## Interacting with AIs
+Before delving into best practices for the use of AIs we should take a quick look into what AIs are and how they learn.  The AIs we are dealing with are Large Language Models (LLMs) and they do not learn the way a human does, but generate results based on probability. That is, they generate a "pattern-based" answer based on training data. For example, if you were to ask the AI what was the capital of England, based on the data the AI was trained with, the most probable answer would be London, that is, it gives the most probable answer based on its training data. A useful analogy would be the difference between a chef, a human who understands ingredients, techniques and flavors and a giant cookbook with millions of recipes (the AI). If a recipe was missing a step the human could experiment with logic and common sense, while all the AI can do is combine elements of recipes it contains.
 
+So you need to look at the AI as your partner that has access to huge amounts of information, but not as a wise entity that knows the answers.  The AI does not learn like a human does, and it lacks reasoning and original thought. So why treat the AI as a partner and what is the value of AIs mimicking understanding through Linguistic patterns? I believe the answer to this lies in conversational learning, that is human to human conversation is an archetypal schema for information transference and processing, and our ability to learn is enhanced when we communicate with an AI as if it was a human, even though it is not. 
+
+### AI vs. Traditional Searches
+When you do a traditional search you are limited to reviewing the pages you can manually view, and even if Google returns several thousand hits, you seldom look past the first page. An AI refines your search and many AIs like Perplexity show you how they generate new searches from your original search. They AI can then process far more documents in a fraction of the time that a human can and so you have a greater depth and breadth of the search. Finally, the AI can assist in interpreting the results of the search.
+
+### AI Learning Library
+In this class I am asking you to create AI Learning Journals that are compiled in your AI_books directory. That is, you start your human to AI interaction with a search and refine it with a discussion. If you transfer this conversations to the markdown cells of Jupyter notebook dedicated to this topic you have created a learning journal on that topic. With the `search_utility` inside of the `search_results` directory you are quickly able to access all the notebooks that have headers with a search term. The result is an easily navigatable learning library of the conversations you have generated with your AI discourse, all within the Jupyter Lab.
+
+OK, let's try and develop some "do's" and "don'ts" with regards to AIs and learning, and realize this dichotomy will evolve as we gain more experience.
+
+### Best Practies In Education
+**Do's**
+- Use AI as **thinking partner**.
+- Use AI for Exploration, not just answers.
+- Use AIs for Feedback, Share your thoughts.
+- Leverage AI for Brainstorming and Ideation.
+- Let the AI know when you think it made a mistake and feel free to argue with it (have a dialogue as if it was human)
+
+**Don'ts**
+- Don't passively accept AI answers as truth.
+- Don't use AI as a shortcut to avoid learning.
+- Don't rely on AI for original thought and creativity
+- Don't rely on the AI for everything
+- Don't ask AIs to write full projects for you.
+- 
+
+
+### Best Practices in AI assisted Queries 
+
+**Do's**
+- Ask specific well-defined questions
+   - Don't ask "How do I use Pandas?"
+   - Ask "How do I read a csv file into a Pandas dataframe". 
+- Verify AI-Generated Code (I have examples where AIs have gone in circles)
+- Break Large tasks into little steps (and have a conversation along the way)
+- Use the AI to Debug!
+- Ask the AI to explain code line-by-line, or element-by-element
+
+**Don'ts**
+- Don't just copy-paste without understanding
+- Don't assume the AI is always correct
+- Don't skip writing the code
+- Don't get frustrated when AI gives perplexing answers
+
+Finally, you should always acknowledge the use of AI assistance in your work. OK, go out and experiment.  But AIs are of great value in navigating Python packages and data science resources in general. 
+
+# Acknowledgements 
+ This content was developed with assistance from [Perplexity AI](https://www.perplexity.ai/) and [Chat GPT](https://chatgpt.com/). Multiple queries were made during the Fall 2024 and the Spring 2025.
