@@ -1,0 +1,9 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="my_fun",  # Package name
+    version="0.1",
+    packages=find_packages(),  # Auto-detects packages (including my_fun)
+    author="Bob Belford",
+    description="Custom functions for our Python class",
+)
