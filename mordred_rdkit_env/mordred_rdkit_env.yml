@@ -1,0 +1,10 @@
+name: mordred_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - rdkit=2020.09.1.0
+  - pip
+  - pip:
+      - mordred[full]
